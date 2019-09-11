@@ -1,0 +1,27 @@
+/* Variables generales */
+$color-red: #FF0000;
+$color-green: #00FF00;
+$color-blue: #0000FF;
+$color-white:#FFF;
+
+//Color de los títulos
+$color-titulo: #161442;
+//Determina el rendondeado del borde de un elemento
+$border-radius: 5px;
+//Determina el color del fondo de la aplicación
+$color-fondo:#DFDFDF;
+//Determina el color del fondo de la seccion
+$color-seccion:#FFF;
+//Pacientes
+@import 'pacientes/main.scss';
+
+.fondo-general{
+    background: $color-fondo;
+}
+.fondo-seccion{
+    background: $color-seccion;
+    padding: 10px;
+    border-radius: $border-radius;
+}
+//Oculta el scroll que aparece en la derecha y lo coloca de manera automatica cuando sea requerido
+html { overflow-y: auto }
